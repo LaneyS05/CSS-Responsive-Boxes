@@ -1,3 +1,57 @@
 body {
   background: blanchedalmond;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
 }
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}  
+
+* {
+  border: 1px solid gray;
+}
+
+.a {
+  min-height: 20vh;
+  flex-grow: 1;
+  font-size: xx-large;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.b {
+  min-height: 80vh;
+  flex-grow: 5;
+  font-size: xx-large;
+  font-weight: bold;
+  color: chartreuse;
+}
+
+.c{
+  min-height: 20vh;
+  flex-grow: 1;
+  font-size: xx-large;
+  font-weight: bold;
+  color: darkorange;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .b {
+    max-width: 100%;
+  }
+  .a {
+    width: 100%;
+  }
+  .c {
+    
+  }
+}   
